@@ -11,13 +11,13 @@ stages:
 
 testing:
   rules:
-    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+  - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
   stage: test
   script:
   # run tests
   - echo "Running PHPUnit Tests"
   - composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
-  - ./vendor/bin/phpunit 
+  - ./vendor/bin/pint
 
 tag_release:
   stage: tag
