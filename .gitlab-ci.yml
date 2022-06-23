@@ -16,6 +16,7 @@ testing:
   script:
   # run tests
   - echo "Running PHPUnit Tests"
+  - ./vendor/bin/pint
   - composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
   - ./vendor/bin/phpunit 
 
