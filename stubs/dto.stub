@@ -1,0 +1,12 @@
+<?php
+
+namespace {{ namespace }};
+
+use Altra\Dto\DataTransfer;
+
+class {{ class }} extends DataTransfer
+{
+    public function __construct(
+        //
+    ) {}
+}

@@ -1,0 +1,44 @@
+{
+    "name": "altra/dto",
+    "version": "1.0.0",
+    "description": "Package to create dto",
+    "type": "library",
+    "keywords": [
+        "dto",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Altra",
+            "email": "informatica@altracorporacion.es"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Altra\\Dto\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Altra\\Dto\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.18"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Altra\\Dto\\DtoServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^7.5"
+    }
+}
