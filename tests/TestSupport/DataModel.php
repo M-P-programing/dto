@@ -6,7 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class DataModel extends Model
 {
-
-  protected $guarded = false;
-
+    protected $guarded = false;
 }
