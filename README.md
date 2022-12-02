@@ -2,4 +2,4 @@
 
 ## Installation
 
-run composer require "altra/dto"
+run composer require "MPProgramming/dto"

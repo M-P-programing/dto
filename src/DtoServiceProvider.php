@@ -1,23 +1,23 @@
 <?php
 
-namespace Altra\Dto;
+namespace MPProgramming\Dto;
 
-use Altra\Dto\Commands\MakeDto;
 use Illuminate\Support\ServiceProvider;
+use MPProgramming\Dto\Commands\MakeDto;
 
 class DtoServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap any package services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                MakeDto::class,
-            ]);
-        }
+  /**
+   * Bootstrap any package services.
+   *
+   * @return void
+   */
+  public function boot()
+  {
+    if ($this->app->runningInConsole()) {
+      $this->commands([
+        MakeDto::class,
+      ]);
     }
+  }
 }

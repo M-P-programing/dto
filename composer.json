@@ -1,6 +1,6 @@
 {
-    "name": "altra/dto",
-    "version": "2.0.0",
+    "name": "mpprogramming/dto",
+    "version": "1.0.0",
     "description": "Package to create dto",
     "type": "library",
     "keywords": [
@@ -10,28 +10,32 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Altra",
-            "email": "informatica@altracorporacion.es"
+            "name": "MPProgramming",
+            "email": "mp.programming007@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Altra\\Dto\\": "src/"
+            "MPProgramming\\Dto\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Altra\\Dto\\Tests\\": "tests"
+            "MPProgramming\\Dto\\Tests\\": "tests"
         }
     },
     "require": {
         "php": "^8.0",
         "illuminate/support": "^8.0|^9.0"
     },
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "lint": "./vendor/bin/pint"
+    },
     "extra": {
         "laravel": {
             "providers": [
-                "Altra\\Dto\\DtoServiceProvider"
+                "MPProgramming\\Dto\\DtoServiceProvider"
             ]
         }
     },

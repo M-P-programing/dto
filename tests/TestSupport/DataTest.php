@@ -1,19 +1,19 @@
 <?php
 
-namespace Altra\Dto\Tests\TestSupport;
+namespace MPProgramming\Dto\Tests\TestSupport;
 
-use Altra\Dto\DataTransfer;
+use MPProgramming\Dto\DataTransfer;
 
 class DataTest extends DataTransfer
 {
-    public function __construct(
+  public function __construct(
     public string $column_1,
     public string $column_2
   ) {
-    }
+  }
 
-    public static function model(): string
-    {
-        return self::class;
-    }
+  public static function model(): string
+  {
+    return self::class;
+  }
 }

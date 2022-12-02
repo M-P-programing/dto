@@ -1,6 +1,6 @@
 <?php
 
-namespace Altra\Dto\Commands;
+namespace MPProgramming\Dto\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 

@@ -19,7 +19,7 @@
     verbose="true"
 >
     <testsuites>
-        <testsuite name="Altra Dto Test Suite">
+        <testsuite name="MPProgramming Dto Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

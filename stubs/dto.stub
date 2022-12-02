@@ -2,7 +2,7 @@
 
 namespace {{ namespace }};
 
-use Altra\Dto\DataTransfer;
+use MPProgramming\Dto\DataTransfer;
 
 class {{ class }} extends DataTransfer
 {

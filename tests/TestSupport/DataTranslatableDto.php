@@ -1,24 +1,24 @@
 <?php
 
-namespace Altra\Dto\Tests\TestSupport;
+namespace MPProgramming\Dto\Tests\TestSupport;
 
-use Altra\Dto\Contracts\DtoTranslatableContract;
-use Altra\Dto\DataTransfer;
-use Altra\Dto\Traits\DtoTranslationsTrait;
+use MPProgramming\Dto\Contracts\DtoTranslatableContract;
+use MPProgramming\Dto\DataTransfer;
+use MPProgramming\Dto\Traits\DtoTranslationsTrait;
 
 class DataTranslatableDto extends DataTransfer implements DtoTranslatableContract
 {
-    use DtoTranslationsTrait;
+  use DtoTranslationsTrait;
 
-    public function __construct(
+  public function __construct(
     public string $column_1,
     public string $column_2,
     public array $translations
   ) {
-    }
+  }
 
-    public static function model(): string
-    {
-        return self::class;
-    }
+  public static function model(): string
+  {
+    return self::class;
+  }
 }
