@@ -6,14 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 interface DtoContract
 {
-  /**
-   * Get model for dto
-   *
-   * @param $request
-   *
-   * @return string
-   */
-  public static function model(): string;
 
   /**
    * Create a new instance from array
